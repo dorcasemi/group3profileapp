@@ -1,0 +1,102 @@
+.mainParentBg {
+  display: flexbox;
+  background-color: rgb(245, 236, 224);
+  width: 100vw;
+  height: 50%;
+}
+@media screen and (max-width: 992px) {
+  .mainParentBg {
+    /* display: block; */
+    background-color: rgb(245, 236, 224);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainParentBg {
+    /* display: block; */
+    background-color: rgb(245, 236, 224);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 200px;
+  }
+}
+.headerTextView {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.headerText {
+  font-size: 4vw;
+  color: #333333;
+  font-weight: bold;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.logoParentView::after {
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .logoParentView {
+  }
+}
+@media screen and (max-width: 600px) {
+  .logoParentView {
+  }
+}
+
+.image {
+  width: 60%;
+  height: 40vh;
+  align-self: center;
+}
+
+@media screen and (max-width: 992px) {
+  .image {
+    width: 100%;
+    height: 22vh;
+    align-self: center;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image {
+    width: 80vw;
+    height: 12vh;
+    align-self: center;
+  }
+}
+
+/* Create four equal columns that floats next to each other */
+.logo {
+  width: 100%;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 100%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100%;
+  }
+}
+.carousel {
+  width: 100%;
+}
